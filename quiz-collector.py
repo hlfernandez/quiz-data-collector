@@ -27,6 +27,7 @@ for i in range(1, num_questions+1):
 # Ask for student responses and store them in a CSV file
 responses = []
 while True:
+    print('\nStudent {}'.format(len(responses)+1))
     # Ask for the student's name and ID
     questions = [inquirer.Text('name', message='What is your name?'), inquirer.Text(
         'id', message='What is your student ID?')]
